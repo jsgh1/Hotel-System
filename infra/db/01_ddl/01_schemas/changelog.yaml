@@ -19,5 +19,3 @@ databaseChangeLog:
             splitStatements: true
             endDelimiter: ;
             stripComments: false
-
-
