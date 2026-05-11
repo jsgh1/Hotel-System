@@ -1,3 +1,4 @@
+
 databaseChangeLog:
   - changeSet:
       id: 002-ddl-schemas-001-schemas
@@ -19,3 +20,4 @@ databaseChangeLog:
             splitStatements: true
             endDelimiter: ;
             stripComments: false
+
