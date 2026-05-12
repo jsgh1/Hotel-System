@@ -1,1 +1,27 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: dml-inserts-001-configuration
+      author: Juan
+      logicalFilePath: 02_dml/00_inserts/001_configuration.sql
+      labels: "dml,inserts,configuration"
+      comment: Runs 02_dml/00_inserts/001_configuration.sql.
+      changes:
+        - sqlFile:
+            path: 001_configuration.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
+            stripComments: false
+  - changeSet:
+      id: dml-inserts-002-security-auth
+      author: Juan
+      logicalFilePath: 02_dml/00_inserts/002_security.sql
+      labels: "dml,inserts,security,auth"
+      comment: Seeds the database auth user and related security data.
+      changes:
+        - sqlFile:
+            path: 002_security.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
+            stripComments: false
